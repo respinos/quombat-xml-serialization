@@ -36,6 +36,20 @@ This _is_ a verbose approach ... but if the alternative is taking domain objects
 
 Might as well take the domain objects and fill use the JAXB-derived classes.
 
+```java
+DivType div1_2 = new DivType();
+div1_2.setLABEL("div:slide");
+div1_2.setORDER(BigInteger.valueOf(2));
+div1_2.setORDERLABEL("Slide 2");
+DivType.Mptr mptr1_2 = new DivType.Mptr();
+mptr1_2.setLOCREF("10002.mets.xml");
+mptr1_2.setLOCTYPE("URL");
+div1_2.getMptr().add(mptr1_2);
+div1.getDiv().add(div1_2);
+```
+
+
 ## Why "quombat-xml-serialization"?
 
 :face_with_head_bandage: Had multiple accidents trying to create a Gradle project in VSCode that could not be fixed by renaming directories so ... this worked.	 
+
