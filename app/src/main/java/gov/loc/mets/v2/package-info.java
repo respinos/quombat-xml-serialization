@@ -4,5 +4,14 @@
 // Any modifications to this file will be lost upon recompilation of the source schema. 
 //
 
-@jakarta.xml.bind.annotation.XmlSchema(namespace = "http://www.loc.gov/METS/v2", elementFormDefault = jakarta.xml.bind.annotation.XmlNsForm.QUALIFIED)
+@jakarta.xml.bind.annotation.XmlSchema(
+        namespace = "http://www.loc.gov/METS/v2",
+        elementFormDefault = jakarta.xml.bind.annotation.XmlNsForm.QUALIFIED,
+        xmlns = {
+                @jakarta.xml.bind.annotation.XmlNs(
+                        prefix = "mets",
+                        namespaceURI = "http://www.loc.gov/METS/v2"
+                )
+        }
+)
 package gov.loc.mets.v2;

@@ -124,7 +124,7 @@ public class App {
         div1_2.getMptr().add(mptr1_2);
         div1.getDiv().add(div1_2);
 
-        System.out.println("== VARIATION: JAXB XML MARSHALLING");
+        System.out.println("\n\n== VARIATION: JAXB XML MARSHALLING");
         JAXBContext context = JAXBContext.newInstance(ObjectFactory.class);
         Marshaller marshaller = context.createMarshaller();
         marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
