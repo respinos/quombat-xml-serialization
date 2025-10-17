@@ -48,6 +48,16 @@ div1_2.getMptr().add(mptr1_2);
 div1.getDiv().add(div1_2);
 ```
 
+**Unmarshalling** is also pretty straight forward:
+
+```java
+Unmarshaller u = context.createUnmarshaller();
+java.io.File fileSetXmlFile = new java.io.File("sample.file_set.mets2.xml");
+Mets fileSetDoc = (Mets)u.unmarshal(fileSetXmlFile);
+MetsHdr.AltRecordID = fileSetDoc.getMetsHdr().getAltRecordID()).getFirst();
+```
+
+...but now you'd have to turn the verbose JAXB classes into our domain classes and that could be tedious. 
 
 ## Why "quombat-xml-serialization"?
 

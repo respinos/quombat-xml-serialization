@@ -16,6 +16,7 @@ import gov.loc.mets.v2.MetsType.MetsHdr;
 import jakarta.xml.bind.JAXBContext;
 import jakarta.xml.bind.JAXBException;
 import jakarta.xml.bind.Marshaller;
+import jakarta.xml.bind.Unmarshaller;
 
 @JacksonXmlRootElement(localName = "author")
 record Author(
@@ -129,5 +130,13 @@ public class App {
         Marshaller marshaller = context.createMarshaller();
         marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
         marshaller.marshal(metsDoc, System.out);
+
+        // what about parsing an XML document?
+        Unmarshaller u = context.createUnmarshaller();
+        // u.setProperty("org.glassfish.jaxb.ObjectFactory", new gov.loc.mets.v2.ObjectFactory());
+        java.io.File fileSetXmlFile = new java.io.File("sample.file_set.mets2.xml");
+        Mets fileSetDoc = (Mets)u.unmarshal(fileSetXmlFile);
+        System.out.println("\n\n== VARIATION: JAXB XML UNMARSHALLING");
+        System.out.println((fileSetDoc.getMetsHdr().getAltRecordID()).getFirst().getValue());
     }
 }

@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<METS:mets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:METS="http://www.loc.gov/METS/v2" xmlns:PREMIS="http://www.loc.gov/premis/v3" xmlns:dcam="http://purl.org/dc/dcam/" OBJID="" xsi:schemaLocation="http://www.loc.gov/METS/v2 ../v2/mets.xsd http://www.loc.gov/premis/v3 http://www.loc.gov/standards/premis/v3/premis.xsd">
+
+  <METS:metsHdr  CREATEDATE="2025-05-19T14:41:29Z" ID="HDR1" TYPE="File Set">
+    <METS:agent ROLE="CREATOR" TYPE="ORGANIZATION">
+      <METS:name>University of Michigan - Library Information Technology - Digital Collection Services</METS:name>
+    </METS:agent>
+    
+    <METS:altRecordID TYPE="DLXS">xyzzy:00000001:00000002</METS:altRecordID>
+    
+  </METS:metsHdr>
+
+    
+  <METS:mdSec>
+    
+    <METS:md ID="_00000000-0000-0000-0000-000000100201" USE="function:technical">
+      <METS:mdRef LOCREF="00000000-0000-0000-0000-000000001002/metadata/00000002.function:source.format:image.jpg.function:technical.mix.xml" LOCTYPE="URL" MDTYPE="NISOIMG"  />
+    </METS:md>
+    
+    <METS:md ID="_00000000-0000-0000-0000-000000100202" USE="function:technical">
+      <METS:mdRef LOCREF="00000000-0000-0000-0000-000000001002/metadata/00000002.function:service.format:image.jpg.function:technical.mix.xml" LOCTYPE="URL" MDTYPE="NISOIMG"  />
+    </METS:md>
+    
+    <METS:md ID="_00000000-0000-0000-0000-000000100203" USE="function:event">
+      <METS:mdRef LOCREF="00000000-0000-0000-0000-000000001002/metadata/00000002.function:service.format:image.jpg.function:event.premis.xml" LOCTYPE="URL" MDTYPE="PREMIS"  />
+    </METS:md>
+    
+    <METS:md ID="_00000000-0000-0000-0000-000000100204" USE="function:technical">
+      <METS:mdRef LOCREF="00000000-0000-0000-0000-000000001002/metadata/00000002.function:service.format:text-plain.txt.function:technical.textmd.xml" LOCTYPE="URL" MDTYPE="TEXTMD"  />
+    </METS:md>
+    
+    <METS:md ID="_00000000-0000-0000-0000-000000100205" USE="function:event">
+      <METS:mdRef LOCREF="00000000-0000-0000-0000-000000001002/metadata/00000002.function:service.format:text-plain.txt.function:event.premis.xml" LOCTYPE="URL" MDTYPE="PREMIS"  />
+    </METS:md>
+    
+  </METS:mdSec>
+  
+
+  
+  <METS:fileSec>
+    
+    <METS:file ID="_e30da91bfd9c4e02d01e06be6b12c34f"  USE="function:source format:image"  MIMETYPE="image/jpeg" MDID="_00000000-0000-0000-0000-000000100201">
+      <METS:FLocat LOCTYPE="SYSTEM" LOCREF="00000000-0000-0000-0000-000000001002/data/00000002.function:source.format:image.jpg" />
+    </METS:file>
+    
+    <METS:file ID="_7167a2ed029b1467f84a28a46a5611f2" GROUPID="_e30da91bfd9c4e02d01e06be6b12c34f" USE="function:service format:image"  MIMETYPE="image/jpeg" MDID="_00000000-0000-0000-0000-000000100202">
+      <METS:FLocat LOCTYPE="SYSTEM" LOCREF="00000000-0000-0000-0000-000000001002/data/00000002.function:service.format:image.jpg" />
+    </METS:file>
+    
+    <METS:file ID="_cbb2a38b6d9dcbd27e32b82124f92f2e" GROUPID="_e30da91bfd9c4e02d01e06be6b12c34f" USE="function:service format:text-plain"  MIMETYPE="text/plain" MDID="_00000000-0000-0000-0000-000000100204">
+      <METS:FLocat LOCTYPE="SYSTEM" LOCREF="00000000-0000-0000-0000-000000001002/data/00000002.function:service.format:text-plain.txt" />
+    </METS:file>
+    
+  </METS:fileSec>
+
+
+  
+
+</METS:mets>
